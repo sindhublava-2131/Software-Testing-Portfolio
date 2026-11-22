@@ -1,0 +1,36 @@
+{
+  "name": "software-testing-automation",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Comprehensive Test Automation Suite for Online Auction System",
+  "scripts": {
+    "test:unit": "vitest run --dir unit",
+    "test:api": "vitest run --dir api",
+    "test:socket": "vitest run --dir socket",
+    "test:security": "vitest run --dir security",
+    "test:all-api": "vitest run --dir api unit socket security",
+    "test:e2e": "playwright test",
+    "test:links": "node links/crawl.mjs",
+    "test:docker": "vitest run --dir docker",
+    "coverage": "vitest run --coverage",
+    "build:reports": "node scripts/build_reports.mjs",
+    "all": "node scripts/run_all.mjs"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "socket.io-client": "^4.8.1",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@vitest/coverage-v8": "^3.0.5",
+    "autocannon": "^8.0.0",
+    "mongodb-memory-server": "^10.1.3",
+    "playwright": "^1.50.0",
+    "vitest": "^3.0.5"
+  }
+}

@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: auction-mongo
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  server:
+    build:
+      context: ../../.sut/server
+      dockerfile: ../../05_Test_Automation/docker/Dockerfile.server
+    container_name: auction-server
+    environment:
+      PORT: 3000
+      ORIGIN: http://localhost:8080
+      MONGO_URL: mongodb://mongo:27017/auction
+      JWT_SECRET: test-secret-please-change-ultra-secure-key-12345
+      JWT_EXPIRES_IN: 1d
+      CLOUDINARY_CLOUD_NAME: demo
+      CLOUDINARY_API_KEY: "123456"
+      CLOUDINARY_API_SECRET: testsecret
+      RESEND_API_KEY: re_test_dummy_key
+    ports:
+      - "3000:3000"
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  client:
+    build:
+      context: ../../.sut/client
+      dockerfile: ../../05_Test_Automation/docker/Dockerfile.client
+      args:
+        VITE_API: http://localhost:3000
+    container_name: auction-client
+    ports:
+      - "8080:80"
+    depends_on:
+      - server
