@@ -1,0 +1,10 @@
+.sut/
+node_modules/
+.env
+*.log
+.stryker-tmp/
+.scannerwork/
+test-results/
+playwright-report/
+.cache/
+~$*

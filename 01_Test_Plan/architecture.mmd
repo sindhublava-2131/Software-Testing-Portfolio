@@ -1,0 +1,43 @@
+graph TD
+    subgraph Client["Client Tier (React 19 + Vite 6 + Tailwind CSS)"]
+        UI[React Router 7 SPA Pages]
+        Redux[Redux Toolkit: authSlice, auctionSlice]
+        RQ[React Query Hooks & API Client]
+        SIO_Client[Socket.io Client 4.x]
+    end
+
+    subgraph Server["Server Tier (Node.js 22 + Express 5)"]
+        MW[Auth Middleware & Cookie Parser]
+        REST[REST API Endpoints: /api/auth, /api/auction, /api/user, /api/admin, /api/upload, /api/contact]
+        SIO_Server[Socket.io Server: /socket.io - auctionHandler]
+        Cron[Node-Cron: Daily Unused Uploads Cleanup]
+    end
+
+    subgraph Data["Database Tier (MongoDB 7 + Mongoose 8)"]
+        UserCol[(User Collection)]
+        ProductCol[(Product Collection with embedded bids[])]
+        LoginCol[(Login Collection with TTL Index)]
+        UploadCol[(Upload Collection: pending/used)]
+    end
+
+    subgraph External["External Services (Mocked / Offline in Test)"]
+        Cloudinary[Cloudinary CDN: Signed Direct Uploads]
+        Resend[Resend API: Contact Notification Emails]
+        IP_API[ip-api.com: IP Geolocation Provider]
+    end
+
+    UI --> Redux
+    UI --> RQ
+    UI --> SIO_Client
+    RQ -->|HTTP / JSON + Cookie| MW
+    MW --> REST
+    SIO_Client -->|WebSockets + Cookie| SIO_Server
+    REST --> UserCol
+    REST --> ProductCol
+    REST --> LoginCol
+    REST --> UploadCol
+    SIO_Server --> ProductCol
+    Cron --> UploadCol
+    REST -.->|Signed params| Cloudinary
+    REST -.->|Batch send| Resend
+    REST -.->|Geo query| IP_API
