@@ -1,0 +1,20 @@
+stateDiagram-v2
+    [*] --> S0_Scheduled: Create auction (start > now)
+    [*] --> S1_LiveNoBids: Create auction (start <= now)
+    
+    S0_Scheduled --> S1_LiveNoBids: Clock reaches itemStartDate
+    S0_Scheduled --> S2_LiveWithBids: Bid placed (Defect D-01: SUT allows future bids)
+    
+    S1_LiveNoBids --> S2_LiveWithBids: Valid bid placed
+    S1_LiveNoBids --> S3_EndedNoBids: Clock passes itemEndDate
+    
+    S2_LiveWithBids --> S2_LiveWithBids: Higher valid bid placed (self-loop)
+    S2_LiveWithBids --> S4_EndedUnsettled: Clock passes itemEndDate
+    
+    S4_EndedUnsettled --> S5_ClosedSold: GET /api/auction/:id (Lazy evaluation triggers winner assignment)
+    S4_EndedUnsettled --> S4_EndedUnsettled: GET /mybids or /stats (Defect D-06: winner stays null)
+    
+    S5_ClosedSold --> S5_ClosedSold: Subsequent GET requests (idempotent)
+    
+    S3_EndedNoBids --> [*]
+    S5_ClosedSold --> [*]
