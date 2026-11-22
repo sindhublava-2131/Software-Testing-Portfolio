@@ -1,0 +1,1742 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\playwright.config.js",
+    "rootDir": "C:/Users/GEX/Desktop/Software-Testing-Portfolio/05_Test_Automation/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/GEX/Desktop/Software-Testing-Portfolio/05_Test_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/GEX/Desktop/Software-Testing-Portfolio/05_Test_Automation/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e",
+        "snapshotDir": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "trace": "on-first-retry",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "actionTimeout": 15000,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\06_Test_Reports\\playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\03_Test_Execution\\raw\\playwright.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e.spec.js",
+      "file": "e2e.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "E2E UI & Workflow Automation Suite",
+          "file": "e2e.spec.js",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-E2E-001: User signup happy path with automatic login and auth_token cookie",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3209,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[E2E Server] Initializing MongoDB via setupMongo()...\n"
+                        },
+                        {
+                          "text": "MongoDB Connected\n"
+                        },
+                        {
+                          "text": "[E2E Server] MongoDB connected.\n"
+                        },
+                        {
+                          "text": "[E2E Server] Starting HTTP & Socket.IO server on port 3000...\n"
+                        },
+                        {
+                          "text": "[E2E Server] Backend listening on http://localhost:3000\n"
+                        },
+                        {
+                          "text": "[E2E Server] Starting Vite preview server on port 5173...\n"
+                        },
+                        {
+                          "text": "[E2E Server] Frontend running on http://localhost:5173\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:27:42.813Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-e49cf0c1237bc5b29303",
+              "file": "e2e.spec.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-002: Signup form HTML5 validation for empty fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2918,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:27:50.556Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-ea6f98bf69d0baf2b6b1",
+              "file": "e2e.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-003: Signup form HTML5 password minLength constraint",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1923,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:27:53.504Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-4ca0def3b003e8778ae8",
+              "file": "e2e.spec.js",
+              "line": 54,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-004: Signup duplicate email displays toast error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3019,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:27:55.453Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-99b4dea3f067edf1922c",
+              "file": "e2e.spec.js",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-005: Signup server error handling displays toast alert",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1535,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:27:58.497Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-2c9f6058587996b9b64a",
+              "file": "e2e.spec.js",
+              "line": 81,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-006: User login happy path with redirect to /",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3391,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:00.063Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-887be7f81552416d75b9",
+              "file": "e2e.spec.js",
+              "line": 89,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-007: Login with incorrect password displays error toast",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3847,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:03.485Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-f53fa5d4ac647d9dea1a",
+              "file": "e2e.spec.js",
+              "line": 104,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-008: Login empty fields validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1407,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:07.365Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-517d4e1ae9652e234df1",
+              "file": "e2e.spec.js",
+              "line": 116,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-009: Protected routes redirect unauthenticated visitor to /login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2519,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:08.809Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-aef035934b798e3305b5",
+              "file": "e2e.spec.js",
+              "line": 127,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-010: Normal user navigating to /admin is blocked from admin dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4438,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:11.355Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-2d718bb508b8820b5a51",
+              "file": "e2e.spec.js",
+              "line": 135,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-011: Create auction happy path with stubbed Cloudinary upload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4467,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:15.817Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-d8e2a4f8a500bd89041a",
+              "file": "e2e.spec.js",
+              "line": 152,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-012: Create auction image upload with .png and .webp formats",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2476,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:20.316Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-06c1679b8cb5fdb61d83",
+              "file": "e2e.spec.js",
+              "line": 185,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-013: Create auction image input with .exe and .pdf files",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1130,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:22.821Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-7d620f9bbe4c7a79f53b",
+              "file": "e2e.spec.js",
+              "line": 201,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-014: Create auction 0-byte image file handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1665,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:23.983Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-fc9f8771bc29e39da2f5",
+              "file": "e2e.spec.js",
+              "line": 216,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-015: Create auction large file > 10MB handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1443,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:25.682Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-657e9710febe2aad3b66",
+              "file": "e2e.spec.js",
+              "line": 229,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-016: Create auction form startingPrice min=1 validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1940,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:27.156Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-dd424b07c66ea43f5e43",
+              "file": "e2e.spec.js",
+              "line": 242,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-017: Create auction pairwise input combination matrix execution",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1090,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:29.124Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-9e6f82ae2e57f67ba3c6",
+              "file": "e2e.spec.js",
+              "line": 255,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-018: Auction list page card rendering, pagination, and navigation to details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3022,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:30.245Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-325ef54fa362c16ccfab",
+              "file": "e2e.spec.js",
+              "line": 260,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-019: View auction details and place valid bid via UI without page reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6714,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Socket connected: re65VAOjHQpQNI7xAAAB | User: Bidder Bob\n"
+                        },
+                        {
+                          "text": "Bidder Bob joined auction: 6b0334205c4bf0edb9967237\n"
+                        },
+                        {
+                          "text": "Bidder Bob left auction: 6b0334205c4bf0edb9967237\n"
+                        },
+                        {
+                          "text": "Socket disconnected: re65VAOjHQpQNI7xAAAB | Reason: transport close\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:33.296Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-99595f372b37435dba84",
+              "file": "e2e.spec.js",
+              "line": 274,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-020: Dual browser contexts: Bid placed in context B updates context A live within 3s",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9268,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:40.039Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-ce00d0ce7c575a4fdd46",
+              "file": "e2e.spec.js",
+              "line": 302,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-021: Bid below min or above max blocked by UI input attributes and server toast",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2132,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:49.334Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-92e711da735ad3e511e9",
+              "file": "e2e.spec.js",
+              "line": 336,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-022: Seller viewing own auction has bid form hidden or disabled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4230,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:51.496Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-5b531394dd37797853c4",
+              "file": "e2e.spec.js",
+              "line": 342,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-023: Auction expiration while page open updates UI to ended and blocks bidding",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2200,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:55.749Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-88db931586077caf7027",
+              "file": "e2e.spec.js",
+              "line": 355,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-024: MyBids status shows winner after winning an ended auction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4587,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:28:57.977Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-d460cd0263635cf2d954",
+              "file": "e2e.spec.js",
+              "line": 361,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-025: MyAuction page displays seller listings with current prices and bid counts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6138,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:29:02.587Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-8cb64f9f035b2e302fad",
+              "file": "e2e.spec.js",
+              "line": 374,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-026: User profile change password and login history table rendering",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4308,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:29:08.754Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-192d0b5f2ad430618870",
+              "file": "e2e.spec.js",
+              "line": 387,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-027: Admin dashboard displays total users, total auctions, and active stats",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4325,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:29:13.091Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-60efc7c5a999a6b59588",
+              "file": "e2e.spec.js",
+              "line": 400,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-028: Admin users list provides search, role filter, and sorting",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2341,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:29:17.444Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-3e75302311777953e80d",
+              "file": "e2e.spec.js",
+              "line": 413,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-029: Contact page form submission with validation and success message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3815,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:29:19.809Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-bf065030781f3503d059",
+              "file": "e2e.spec.js",
+              "line": 419,
+              "column": 3
+            },
+            {
+              "title": "TC-E2E-030: Responsive viewport testing at 375x667 and 768x1024 without horizontal overflow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4998,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[E2E Server] Stopping servers...\n"
+                        },
+                        {
+                          "text": "[E2E Server] All servers stopped cleanly.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-22T18:29:23.651Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "C:\\Users\\GEX\\Desktop\\Software-Testing-Portfolio\\05_Test_Automation\\e2e\\e2e.spec.js",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "616cc0f313d283bb66d2-34947dab979c395c7bcd",
+              "file": "e2e.spec.js",
+              "line": 443,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-22T18:27:39.051Z",
+    "duration": 110308.119,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

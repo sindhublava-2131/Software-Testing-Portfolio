@@ -1,0 +1,79 @@
+[
+  {
+    "source": "/",
+    "target": "/login",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/",
+    "target": "/signup",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/",
+    "target": "/about",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/",
+    "target": "/contact",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/footer",
+    "target": "/Legal/terms-of-service",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/footer",
+    "target": "/Legal/privacy-policy",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/footer",
+    "target": "/Legal/dmca",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/footer",
+    "target": "/Legal/code-of-conduct",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/footer",
+    "target": "/Legal/acceptable-use-policy",
+    "type": "internal",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/contact",
+    "target": "mailto:support@onlineauction.com",
+    "type": "mailto",
+    "status": 200,
+    "verdict": "OK"
+  },
+  {
+    "source": "/about",
+    "target": "https://github.com/theavnishkumar/online-auction-system",
+    "type": "external",
+    "status": 200,
+    "verdict": "OK"
+  }
+]

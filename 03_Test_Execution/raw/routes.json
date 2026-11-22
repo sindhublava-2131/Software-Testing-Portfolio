@@ -1,0 +1,31 @@
+{
+  "openRoutes": [
+    "/",
+    "/login",
+    "/signup",
+    "/contact",
+    "/about",
+    "/Legal",
+    "/Legal/terms-of-service",
+    "/Legal/privacy-policy",
+    "/Legal/dmca",
+    "/Legal/code-of-conduct",
+    "/Legal/acceptable-use-policy"
+  ],
+  "protectedRoutes": [
+    "/auction",
+    "/myauction",
+    "/mybids",
+    "/create",
+    "/auction/:id",
+    "/profile",
+    "/privacy"
+  ],
+  "adminRoutes": [
+    "/admin",
+    "/admin/users"
+  ],
+  "deadPages": [
+    "pages/Dashboard.jsx"
+  ]
+}
